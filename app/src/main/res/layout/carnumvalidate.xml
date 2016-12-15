@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_carnum"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/title_bg">   
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/car_num"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:maxLength="17"
+            android:text="LSVAJ4BR0EN119128"
+            android:hint="请输入车架号/扫描条形码"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textColorHint="#ffffff"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_scan"/>
+    </LinearLayout>
+    
+     <ImageView android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/baixian"
+         android:scaleType="fitXY"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#848F97"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/tip"
+        android:gravity="center" />
+    
+
+
+</LinearLayout>

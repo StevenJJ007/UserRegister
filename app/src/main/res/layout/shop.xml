@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context="com.anyonavinfo.commonuserregister.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="1280px"
+        android:layout_height="78px"
+        android:background="@drawable/nav_02">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="4S店"
+            android:textColor="#ffffff"
+            android:textSize="48px">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl2"
+        android:layout_width="1200px"
+        android:layout_height="90px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="20px">
+
+        <!--第一行信息-->
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="1200px"
+            android:layout_height="80px"
+            android:paddingTop="10px">
+
+            <!--省份-->
+            <LinearLayout
+                android:id="@+id/ll7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="省份"
+                    android:textColor="#ffffff"
+                    android:textSize="38px" />
+
+                <FrameLayout
+                    android:layout_width="300px"
+                    android:layout_height="66px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/small">
+
+                    <Spinner
+                        android:id="@+id/province"
+                        android:layout_width="300px"
+                        android:layout_height="66px"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="26px"
+                        android:layout_height="15px"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="5px"
+                        android:layout_marginRight="5px"
+                        android:src="@drawable/arow_top" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--城市-->
+            <LinearLayout
+                android:id="@+id/ll8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="城市"
+                    android:textColor="#ffffff"
+                    android:textSize="38px" />
+
+                <FrameLayout
+                    android:layout_width="300px"
+                    android:layout_height="66px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/small">
+
+                    <Spinner
+                        android:id="@+id/city"
+                        android:layout_width="300px"
+                        android:layout_height="66px"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:paddingLeft="5px" />
+
+                    <ImageView
+                        android:layout_width="26px"
+                        android:layout_height="15px"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="5px"
+                        android:layout_marginRight="5px"
+                        android:src="@drawable/arow_top" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl3"
+        android:layout_width="1200px"
+        android:layout_height="400px"
+        android:layout_marginLeft="170px"
+        android:paddingTop="20px">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="1200px"
+            android:layout_height="400px"
+            android:paddingTop="10px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:text="经销商"
+                android:textColor="#ffffff"
+                android:textSize="38px" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="700px"
+                android:layout_height="350px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/supporter">
+
+                <ListView
+                    android:id="@+id/show_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fadeScrollbars="false"
+                    android:scrollbarTrackVertical="@drawable/srollerbars" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

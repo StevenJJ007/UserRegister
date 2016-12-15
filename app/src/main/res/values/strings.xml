@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">用户注册</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scan_text">将条形码放入框中, 即可自动扫描</string>
+    <string name="tip">提示: 车架号参见于挡风玻璃上的条形码,即行驶证上的车辆识别代码。</string>
+</resources>
